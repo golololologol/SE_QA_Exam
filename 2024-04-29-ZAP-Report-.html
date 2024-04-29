@@ -1,0 +1,4860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="2024-04-29-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-04-29-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-04-29-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-04-29-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Mon 29 Apr 2024, at 14:11:13</span>
+		</p>
+		<p>ZAP Version: 2.14.0</p>
+		<p>
+			ZAP is supported by the <a href="https://crashoverride.com/?zap=rep">Crash Override Open Source Fellowship</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">High</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(5)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(4)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://google-gruyere.appspot.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.9%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(5.9%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.9%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.9%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.9%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(17.6%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.9%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(29.4%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(35.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(17.6%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(23.5%)</span></td>
+							<td><span>7</span><br> <span class="additional-info-percentages">(41.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11.8%)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(58.8%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(29.4%)</span></td>
+							<td><span>17</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://google-gruyere.appspot.com</th>
+							
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(17)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Cross Site Scripting (Reflected)</a></th>
+							<td class="risk-level">High</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Absence of Anti-CSRF Tokens</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(47.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>69</span><br> <span
+								class="additional-info-percentages">(405.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>68</span><br> <span
+								class="additional-info-percentages">(400.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Big Redirect Detected (Potential Sensitive Information Leak)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(23.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Cookie Without Secure Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(23.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(23.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>102</span><br> <span
+								class="additional-info-percentages">(600.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>83</span><br> <span
+								class="additional-info-percentages">(488.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Charset Mismatch (Header Versus Meta Content-Type Charset)</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(35.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">Cookie Poisoning</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(17.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-12">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-13">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>16</span><br> <span
+								class="additional-info-percentages">(94.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-14">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>69</span><br> <span
+								class="additional-info-percentages">(405.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-15">Retrieved from Cache</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>55</span><br> <span
+								class="additional-info-percentages">(323.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-16">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>17</span><br> <span
+								class="additional-info-percentages">(100.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>17</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">High</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Cross Site Scripting (Reflected)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/feed.gtl?uid=%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting">WSTG-v42-INPV-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html">OWASP_2017_A07</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user&#39;s browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p>
+
+<p>When an attacker gets a user&#39;s browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p>
+
+<p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p>
+
+<p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim&#39;s knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user&#39;s browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p>
+
+<p>Persistent attacks occur when the malicious code is submitted to a web site where it&#39;s stored for a period of time. Examples of an attacker&#39;s favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (519 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/feed.gtl?uid=%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E HTTP/1.1
+host: google-gruyere.appspot.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://google-gruyere.appspot.com/635366758510173025864780192455714656361/snippets.gtl?uid=cheddar
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (304 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: d689671c92439a8e1d4c569e1456e36a
+Date: Mon, 29 Apr 2024 18:09:32 GMT
+Server: Google Frontend
+Content-Length: 51
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (51 bytes)</summary>
+				
+				<pre><code>
+_feed((
+
+
+[
+&quot;&lt;scrIpt&gt;alert(1);&lt;/scRipt&gt;&quot;
+
+]
+
+
+
+))
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>uid</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>&lt;scrIpt&gt;alert(1);&lt;/scRipt&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;scrIpt&gt;alert(1);&lt;/scRipt&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft&#39;s Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p>
+
+<p>Phases: Implementation; Architecture and Design</p>
+
+<p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p>
+
+<p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p>
+
+<p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>
+
+<p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+
+<p>Phase: Implementation</p>
+
+<p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>
+
+<p>To help mitigate XSS attacks against the user&#39;s session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user&#39;s session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p>
+
+<p>Assume all input is malicious. Use an &quot;accept known good&quot; input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, &quot;boat&quot; may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as &quot;red&quot; or &quot;blue.&quot;</p>
+
+<p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p>
+
+<p>	</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (311 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/0 HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/robots.txt
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+X-Cloud-Trace-Context: 7758bc0f7c917017850f11b5c0404b0f
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 359
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (359 bytes)</summary>
+				
+				<pre><code>
+    &lt;HTML&gt;
+  &lt;STYLE&gt;
+  body, th, td, form {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h1 { color: #dd0000; }
+  &lt;/STYLE&gt;
+    &lt;TITLE&gt;Gruyere Error&lt;/TITLE&gt;
+    &lt;BODY&gt;
+    &lt;H1&gt;Gruyere Error&lt;/H1&gt;
+    That instance does not exist.
+    &lt;H2&gt;&lt;A href=&quot;/&quot;&gt;Home&lt;/A&gt;&lt;/H2&gt;
+    &lt;H2&gt;&lt;A href=&quot;/start&quot;&gt;Start&lt;/A&gt;&lt;/H2&gt;
+    &lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/3</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (311 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/3 HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/robots.txt
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+X-Cloud-Trace-Context: 3329cd155779dfd22164e886ada2229d
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 359
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (359 bytes)</summary>
+				
+				<pre><code>
+    &lt;HTML&gt;
+  &lt;STYLE&gt;
+  body, th, td, form {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h1 { color: #dd0000; }
+  &lt;/STYLE&gt;
+    &lt;TITLE&gt;Gruyere Error&lt;/TITLE&gt;
+    &lt;BODY&gt;
+    &lt;H1&gt;Gruyere Error&lt;/H1&gt;
+    That instance does not exist.
+    &lt;H2&gt;&lt;A href=&quot;/&quot;&gt;Home&lt;/A&gt;&lt;/H2&gt;
+    &lt;H2&gt;&lt;A href=&quot;/start&quot;&gt;Start&lt;/A&gt;&lt;/H2&gt;
+    &lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Absence of Anti-CSRF Tokens</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/newaccount.gtl</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No Anti-CSRF tokens were found in a HTML submission form.</p>
+
+<p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p>
+
+<p>CSRF attacks are effective in a number of situations, including:</p>
+
+<p>    * The victim has an active session on the target site.</p>
+
+<p>    * The victim is authenticated via HTTP auth on the target site.</p>
+
+<p>    * The victim is on the same local network as the target site.</p>
+
+<p>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;action&quot; &quot;is_author&quot; &quot;pw&quot; &quot;uid&quot; ].</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (394 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/newaccount.gtl HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/635366758510173025864780192455714656361/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (306 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 900509b9ae5328d96085aae8aac37f4d
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 2961
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2961 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: Profile&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#39;cheese.png&#39;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#39;menu&#39;&gt;
+  &lt;span id=&#39;menu-left&#39;&gt;
+    &lt;a href=&#39;/635366758510173025864780192455714656361/&#39;&gt;Home&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#39;menu-right&#39;&gt;
+      
+      
+      &lt;a href=&#39;/635366758510173025864780192455714656361/login&#39;&gt;Sign in&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/newaccount.gtl&#39;&gt;Sign up&lt;/a&gt;
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Gruyere: Sign up&lt;/h2&gt;
+
+&lt;div class=&#39;content&#39;&gt;
+&lt;h3&gt;Sign up for a new account.&lt;/h3&gt;
+
+
+
+&lt;form method=&#39;get&#39; action=&#39;/635366758510173025864780192455714656361/saveprofile&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;action&#39; value=&#39;new&#39;&gt;
+
+&lt;table&gt;&lt;tr&gt;&lt;td&gt;
+    User name:
+  &lt;/td&gt;&lt;td&gt;
+    &lt;input type=&#39;text&#39; name=&#39;uid&#39; value=&#39;&#39; maxlength=&#39;16&#39;&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+    Password:
+  &lt;/td&gt;&lt;td&gt;
+    &lt;input type=&#39;password&#39; name=&#39;pw&#39;&gt;
+    &lt;br&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;b&gt;WARNING: Gruyere is not secure.&lt;br&gt;
+    Do not use a password that you use for any real service.&lt;br&gt;
+    Do not upload any personal or private data.&lt;/b&gt;&lt;/span&gt;
+&lt;/td&gt;&lt;/tr&gt;
+
+
+&lt;input type=&#39;hidden&#39; name=&#39;is_author&#39; value=&#39;True&#39;&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td align=&#39;right&#39;&gt;
+    &lt;input type=&#39;submit&#39; value=&#39;Create account&#39;&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form method=&#39;get&#39; action=&#39;/635366758510173025864780192455714656361/saveprofile&#39;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Use the ESAPI Session Management control.</p>
+
+<p>This control includes a component for CSRF.</p>
+
+<p>Do not use the GET method for any request that triggers a state change.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (265 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/sitemap.xml HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (263 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=UTF-8
+X-Cloud-Trace-Context: 776218ce66ec12f8e5655544432fb3e8
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 52
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (52 bytes)</summary>
+				
+				<pre><code>404 Not Found
+
+The resource could not be found.
+
+   </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(5)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(5)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Big Redirect Detected (Potential Sensitive Information Leak)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/newsnippet2?snippet</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Location header URI length: 87 [https://google-gruyere.appspot.com/635366758510173025864780192455714656361/snippets.gtl].</p>
+
+<p>Predicted response size: 387.</p>
+
+<p>Response Body Length: 2,793.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (503 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/newsnippet2?snippet HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/635366758510173025864780192455714656361/newsnippet.gtl
+Cookie: GRUYERE=26087470|ZAP||author; GRUYERE_ID=365888515764266184426573587249237760494
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (408 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Cache-Control: no-cache
+Location: https://google-gruyere.appspot.com/635366758510173025864780192455714656361/snippets.gtl
+Pragma: no-cache
+Content-type: text/html
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: a224260bf41adfa1cb61fab125b611a6
+Date: Mon, 29 Apr 2024 18:06:33 GMT
+Server: Google Frontend
+Content-Length: 2793
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2793 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: Error&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#39;cheese.png&#39;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#39;menu&#39;&gt;
+  &lt;span id=&#39;menu-left&#39;&gt;
+    &lt;a href=&#39;/635366758510173025864780192455714656361/&#39;&gt;Home&lt;/a&gt;
+      
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/snippets.gtl&#39;&gt;My&amp;nbsp;Snippets&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/newsnippet.gtl&#39;&gt;New&amp;nbsp;Snippet&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/upload.gtl&#39;&gt;Upload&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#39;menu-right&#39;&gt;
+      
+      &lt;span class=&#39;menu-user&#39;&gt;
+        ZAP &amp;lt;ZAP&amp;gt;
+      &lt;/span&gt;
+      
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/editprofile.gtl&#39;&gt;Profile&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/logout&#39;&gt;Sign out&lt;/a&gt;
+      
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#39;message&#39;&gt;No snippet!&lt;/div&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;!DOCTYPE HTML PUBLIC &#39;-//W3C//DTD HTML//EN\&gt;
+        &lt;html&gt;&lt;body&gt;
+        &lt;title&gt;302 Redirect&lt;/title&gt;
+        Redirected &lt;a href=&quot;/635366758510173025864780192455714656361/snippets.gtl&quot;&gt;here&lt;/a&gt;
+        &lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/start</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (315 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/start HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/robots.txt
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (411 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Set-Cookie: GRUYERE_ID=365888515764266184426573587249237760494; Path=/
+X-Cloud-Trace-Context: 176281b75d45c1d2082b5847a3a1cc6b
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 681
+Expires: Mon, 29 Apr 2024 18:06:31 GMT
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (681 bytes)</summary>
+				
+				<pre><code>
+    &lt;HTML&gt;
+    
+  &lt;STYLE&gt;
+  body, th, td, form {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h1 { color: #dd0000; }
+  &lt;/STYLE&gt;
+    &lt;TITLE&gt;Start Gruyere&lt;/TITLE&gt;
+    &lt;BODY&gt;
+    &lt;H1&gt;Start Gruyere&lt;/H1&gt;
+    Your Gruyere instance id is 365888515764266184426573587249237760494.
+
+    &lt;br&gt;&lt;br&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;b&gt;WARNING: Gruyere is not secure.&lt;br&gt;
+    Do not upload any personal or private data.&lt;/b&gt;&lt;/span&gt;
+
+    &lt;br&gt;&lt;br&gt;By using Gruyere you agree to the
+    &lt;A href=&quot;https://www.google.com/intl/en/policies/terms/&quot;&gt;terms of service&lt;/A&gt;.
+
+    &lt;H2&gt;&lt;A HREF=&quot;/365888515764266184426573587249237760494&quot;&gt;Agree &amp;amp; Start&lt;/A&gt;&lt;/H2&gt;
+    &lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>GRUYERE_ID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: GRUYERE_ID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Cookie Without Secure Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/start</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (315 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/start HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/robots.txt
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (411 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Set-Cookie: GRUYERE_ID=365888515764266184426573587249237760494; Path=/
+X-Cloud-Trace-Context: 176281b75d45c1d2082b5847a3a1cc6b
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 681
+Expires: Mon, 29 Apr 2024 18:06:31 GMT
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (681 bytes)</summary>
+				
+				<pre><code>
+    &lt;HTML&gt;
+    
+  &lt;STYLE&gt;
+  body, th, td, form {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h1 { color: #dd0000; }
+  &lt;/STYLE&gt;
+    &lt;TITLE&gt;Start Gruyere&lt;/TITLE&gt;
+    &lt;BODY&gt;
+    &lt;H1&gt;Start Gruyere&lt;/H1&gt;
+    Your Gruyere instance id is 365888515764266184426573587249237760494.
+
+    &lt;br&gt;&lt;br&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;b&gt;WARNING: Gruyere is not secure.&lt;br&gt;
+    Do not upload any personal or private data.&lt;/b&gt;&lt;/span&gt;
+
+    &lt;br&gt;&lt;br&gt;By using Gruyere you agree to the
+    &lt;A href=&quot;https://www.google.com/intl/en/policies/terms/&quot;&gt;terms of service&lt;/A&gt;.
+
+    &lt;H2&gt;&lt;A HREF=&quot;/365888515764266184426573587249237760494&quot;&gt;Agree &amp;amp; Start&lt;/A&gt;&lt;/H2&gt;
+    &lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>GRUYERE_ID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: GRUYERE_ID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/start</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (315 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/start HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/robots.txt
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (411 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Set-Cookie: GRUYERE_ID=365888515764266184426573587249237760494; Path=/
+X-Cloud-Trace-Context: 176281b75d45c1d2082b5847a3a1cc6b
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 681
+Expires: Mon, 29 Apr 2024 18:06:31 GMT
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (681 bytes)</summary>
+				
+				<pre><code>
+    &lt;HTML&gt;
+    
+  &lt;STYLE&gt;
+  body, th, td, form {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h1 { color: #dd0000; }
+  &lt;/STYLE&gt;
+    &lt;TITLE&gt;Start Gruyere&lt;/TITLE&gt;
+    &lt;BODY&gt;
+    &lt;H1&gt;Start Gruyere&lt;/H1&gt;
+    Your Gruyere instance id is 365888515764266184426573587249237760494.
+
+    &lt;br&gt;&lt;br&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;b&gt;WARNING: Gruyere is not secure.&lt;br&gt;
+    Do not upload any personal or private data.&lt;/b&gt;&lt;/span&gt;
+
+    &lt;br&gt;&lt;br&gt;By using Gruyere you agree to the
+    &lt;A href=&quot;https://www.google.com/intl/en/policies/terms/&quot;&gt;terms of service&lt;/A&gt;.
+
+    &lt;H2&gt;&lt;A HREF=&quot;/365888515764266184426573587249237760494&quot;&gt;Agree &amp;amp; Start&lt;/A&gt;&lt;/H2&gt;
+    &lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>GRUYERE_ID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: GRUYERE_ID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (264 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/robots.txt HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (344 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Cloud-Trace-Context: eac69713d54edeec6b7ab0778013ef42
+Server: Google Frontend
+Content-Length: 184
+Date: Mon, 29 Apr 2024 18:00:37 GMT
+Expires: Mon, 29 Apr 2024 18:10:37 GMT
+Cache-Control: public, max-age=600
+Age: 353
+ETag: &quot;3m8CBg&quot;
+Content-Type: text/plain
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (184 bytes)</summary>
+				
+				<pre><code>User-agent: *
+Disallow: /0
+Disallow: /1
+Disallow: /2
+Disallow: /3
+Disallow: /4
+Disallow: /5
+Disallow: /6
+Disallow: /7
+Disallow: /8
+Disallow: /9
+Disallow: /start
+Disallow: /resetbutton
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-13">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (294 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/ HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (306 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 6db94e24a341576a9a6aac3ed8283b94
+Date: Mon, 29 Apr 2024 18:06:30 GMT
+Server: Google Frontend
+Content-Length: 3730
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3730 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: Home&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#39;cheese.png&#39;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;script src=&quot;/635366758510173025864780192455714656361/lib.js&quot; text=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#39;menu&#39;&gt;
+  &lt;span id=&#39;menu-left&#39;&gt;
+    &lt;a href=&#39;/635366758510173025864780192455714656361/&#39;&gt;Home&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#39;menu-right&#39;&gt;
+      
+      
+      &lt;a href=&#39;/635366758510173025864780192455714656361/login&#39;&gt;Sign in&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/newaccount.gtl&#39;&gt;Sign up&lt;/a&gt;
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;h2 class=&#39;has-refresh&#39;&gt;Gruyere: Home&lt;/h2&gt;
+&lt;div class=&#39;refresh&#39;&gt;&lt;a class=&#39;button&#39; onclick=&#39;_refreshHome(&quot;635366758510173025864780192455714656361&quot;)&#39; href=&#39;#&#39;&gt;Refresh&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#39;content&#39;&gt;
+&lt;table width=&#39;100%&#39;&gt;
+
+  &lt;tr&gt;&lt;td colspan=&#39;3&#39;&gt;&lt;b&gt;Most recent snippets:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+
+
+
+
+  &lt;tr&gt;
+    &lt;td&gt;
+     
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;b&gt;&lt;span style=&#39;color:blue&#39;&gt;Cheddar Mac&lt;/span&gt;&lt;/b&gt;
+    &lt;/td&gt;
+    &lt;td width=&#39;100%&#39;&gt;&lt;span id=&#39;cheddar&#39;&gt;Gruyere is the cheesiest application on the web.&lt;/span&gt;
+    &lt;br&gt;
+          &lt;a href=&#39;/635366758510173025864780192455714656361/snippets.gtl?uid=cheddar&#39;&gt;All snippets&lt;/a&gt;&amp;nbsp;
+      &lt;a href=&#39;https://images.google.com/?q=cheddar+cheese&#39;&gt;Homepage&lt;/a&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+
+
+
+
+  &lt;tr&gt;
+    &lt;td&gt;
+     
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;b&gt;&lt;span style=&#39;color:red; text-decoration:underline&#39;&gt;Brie&lt;/span&gt;&lt;/b&gt;
+    &lt;/td&gt;
+    &lt;td width=&#39;100%&#39;&gt;&lt;span id=&#39;brie&#39;&gt;Brie is the queen of the cheeses&lt;span style=color:red&gt;!!!&lt;/span&gt;&lt;/span&gt;
+    &lt;br&gt;
+          &lt;a href=&#39;/635366758510173025864780192455714656361/snippets.gtl?uid=brie&#39;&gt;All snippets&lt;/a&gt;&amp;nbsp;
+      &lt;a href=&#39;https://news.google.com/news/search?q=brie&#39;&gt;Homepage&lt;/a&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;a class=&#39;button&#39; onclick=&#39;_refreshHome(&quot;635366758510173025864780192455714656361&quot;)&#39; href=&#39;#&#39;&gt;Refresh&lt;/a&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-15">Retrieved from Cache</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The presence of the &#39;Age&#39; header indicates that that a HTTP/1.1 compliant caching server is in use.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (264 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/robots.txt HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (344 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Cloud-Trace-Context: eac69713d54edeec6b7ab0778013ef42
+Server: Google Frontend
+Content-Length: 184
+Date: Mon, 29 Apr 2024 18:00:37 GMT
+Expires: Mon, 29 Apr 2024 18:10:37 GMT
+Cache-Control: public, max-age=600
+Age: 353
+ETag: &quot;3m8CBg&quot;
+Content-Type: text/plain
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (184 bytes)</summary>
+				
+				<pre><code>User-agent: *
+Disallow: /0
+Disallow: /1
+Disallow: /2
+Disallow: /3
+Disallow: /4
+Disallow: /5
+Disallow: /6
+Disallow: /7
+Disallow: /8
+Disallow: /9
+Disallow: /start
+Disallow: /resetbutton
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Age: 353</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p>
+
+<p>Cache-Control: no-cache, no-store, must-revalidate, private</p>
+
+<p>Pragma: no-cache</p>
+
+<p>Expires: 0</p>
+
+<p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-16">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/start</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:GRUYERE_ID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (315 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/start HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/robots.txt
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (411 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Set-Cookie: GRUYERE_ID=365888515764266184426573587249237760494; Path=/
+X-Cloud-Trace-Context: 176281b75d45c1d2082b5847a3a1cc6b
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 681
+Expires: Mon, 29 Apr 2024 18:06:31 GMT
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (681 bytes)</summary>
+				
+				<pre><code>
+    &lt;HTML&gt;
+    
+  &lt;STYLE&gt;
+  body, th, td, form {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h1 { color: #dd0000; }
+  &lt;/STYLE&gt;
+    &lt;TITLE&gt;Start Gruyere&lt;/TITLE&gt;
+    &lt;BODY&gt;
+    &lt;H1&gt;Start Gruyere&lt;/H1&gt;
+    Your Gruyere instance id is 365888515764266184426573587249237760494.
+
+    &lt;br&gt;&lt;br&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;b&gt;WARNING: Gruyere is not secure.&lt;br&gt;
+    Do not upload any personal or private data.&lt;/b&gt;&lt;/span&gt;
+
+    &lt;br&gt;&lt;br&gt;By using Gruyere you agree to the
+    &lt;A href=&quot;https://www.google.com/intl/en/policies/terms/&quot;&gt;terms of service&lt;/A&gt;.
+
+    &lt;H2&gt;&lt;A HREF=&quot;/365888515764266184426573587249237760494&quot;&gt;Agree &amp;amp; Start&lt;/A&gt;&lt;/H2&gt;
+    &lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>GRUYERE_ID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>365888515764266184426573587249237760494</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://google-gruyere.appspot.com</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Charset Mismatch (Header Versus Meta Content-Type Charset)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there&#39;s a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content&#39;s correct character set.</p>
+
+<p>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>There was a charset mismatch between the HTTP Header and the META content-type encoding declarations: [utf-8] and [ISO-8859-1] do not match.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (301 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/ HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/0
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (301 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+X-Cloud-Trace-Context: 97a28bf632126c88e4c3752a2ca634ee
+Date: Mon, 29 Apr 2024 18:06:31 GMT
+Server: Google Frontend
+Content-Length: 11506
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (11506 bytes)</summary>
+				
+				<pre><code>&lt;HTML&gt;&lt;HEAD&gt;&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+&lt;TITLE&gt;Web Application Exploits and Defenses&lt;/TITLE&gt;
+&lt;LINK type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../static/codelab.css&quot;&gt;
+&lt;!--MARK-Z--&gt;
+&lt;SCRIPT&gt;
+function toggleBlock(heading, whichID) {
+  var image = heading.childNodes[0];
+  var block = document.getElementById(whichID);
+  if (block) {
+    if (getDisplay(block) == &#39;block&#39;) {
+      block.style.display = &#39;none&#39;;
+      image.src = &#39;static/closed.gif&#39;;
+    } else {    // &quot;none&quot; or &quot;&quot;
+      block.style.display = &#39;block&#39;;
+      image.src = &#39;static/open.gif&#39;;
+    }
+  }
+}
+
+function getDisplay(block) {
+  var value = block.style.display;
+  if (!value) {
+    if (document.defaultView) {
+      var computedStyle = document.defaultView.getComputedStyle(block, &quot;&quot;);
+      value = computedStyle.getPropertyValue(&#39;display&#39;);
+    } else if (block.currentStyle) {
+      value = block.currentStyle.display;
+    }
+  }
+  return value;
+}
+&lt;/SCRIPT&gt;
+&lt;/HEAD&gt;
+&lt;BODY bgcolor=&quot;#ffffff&quot;&gt;
+
+&lt;DIV class=&quot;banner&quot;&gt;&lt;/DIV&gt;
+&lt;H1&gt;&lt;FONT size=&quot;+2&quot;&gt;&lt;IMG src=&quot;/static/gruyere-78.png&quot; style=&quot;vertical-align:middle&quot;&gt;
+Web Application Exploits and Defenses &lt;!--PART#--&gt;&lt;/FONT&gt; &lt;/H1&gt;
+&lt;P&gt;
+A Codelab by Bruce Leban, Mugdha Bendre, and Parisa Tabriz
+&lt;/P&gt;
+&lt;DIV class=&quot;printable&quot;&gt;
+&lt;DIV class=&quot;column1&quot;&gt;
+Table of Contents
+&lt;UL&gt;
+&lt;LI class=&quot;L1&quot; style=&quot;padding-top:0pt&quot;&gt; &lt;A href=&quot;/#0__hackers&quot;&gt;Beat the hackers&lt;/A&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot; style=&quot;padding-top:0pt&quot;&gt; &lt;A href=&quot;/#0__gruyere&quot;&gt;Gruyere&lt;/A&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part1#1__setup&quot;&gt;Set-up&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part1#1__reset_button&quot;&gt;Reset Button&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part1#1__about_the_code&quot;&gt;About the Code&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part1#1__features_and_technologies&quot;&gt;Features and Technologies&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part1#1__using_gruyere&quot;&gt;Using Gruyere&lt;/A&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part2#2__cross_site_scripting&quot;&gt;Cross-Site Scripting (XSS)&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__xss_challenge&quot;&gt;XSS Challenges&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__file_upload_xss&quot;&gt;File Upload XSS&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__reflected_xss&quot;&gt;Reflected XSS&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__stored_xss&quot;&gt;Stored XSS&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__stored_xss_via_html_attribute&quot;&gt;Stored XSS via HTML Attribute&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__stored_xss_via_ajax&quot;&gt;Stored XSS via AJAX&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__reflected_xss_via_ajax&quot;&gt;Reflected XSS via AJAX&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part2#2__more_about_xss&quot;&gt;More about XSS&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part3#3__client_state_manipulation&quot;&gt;Client-State Manipulation&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part3#3__elevation_of_privilege&quot;&gt; Elevation of Privilege &lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part3#3__cookie_manipulation&quot;&gt; Cookie Manipulation &lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part3#3__cross_site_request_forgery&quot;&gt;Cross-Site Request Forgery (XSRF)&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part3#3__xsrf_challenge&quot;&gt;XSRF Challenge&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part3#3__more_about_preventing_xsrf&quot;&gt;More about preventing XSRF&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part3#3__cross_site_script_inclusion&quot;&gt;Cross Site Script Inclusion (XSSI)&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part3#3__xssi_challenge&quot;&gt;XSSI Challenge&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part4#4__path_traversal&quot;&gt;Path Traversal&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__information_disclosure_path_traversal&quot;&gt;Information disclosure via path traversal &lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__data_tampering_path_traversal&quot;&gt;Data tampering via path traversal &lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part4#4__denial_of_service&quot;&gt;Denial of Service&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__dos_quit_server&quot;&gt;DoS - Quit the Server&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__dos_overload_server&quot;&gt;DoS - Overloading the Server&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__more_dos&quot;&gt;More on Denial of Service&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part4#4__code_execution&quot;&gt;Code Execution&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__code_execution_challenge&quot;&gt;Code Execution Challenge&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part4#4__more_code_execution&quot;&gt;More on Remote Code Execution&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part5#5__configuration_vulnerabilities&quot;&gt;Configuration Vulnerabilities&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__information_disclosure_config_1&quot;&gt;Information disclosure #1&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__information_disclosure_config_2&quot;&gt;Information disclosure #2&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__information_disclosure_bug_3&quot;&gt;Information disclosure #3 &lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part5#5__ajax_vulnerabilities&quot;&gt;AJAX vulnerabilities&lt;/A&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__dos_via_ajax&quot;&gt;DoS via AJAX&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__phishing_via_ajax&quot;&gt;Phishing via AJAX&lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part5#5__other_vulnerabilities&quot;&gt; Other Vulnerabilities &lt;/A&gt; &lt;/H2&gt;
+  &lt;UL&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__buffer_and_integer_overflow&quot;&gt;Buffer Overflow and Integer Overflow&lt;/A&gt;&lt;/LI&gt;
+  &lt;LI class=&quot;L2&quot;&gt; &lt;A href=&quot;/part5#5__sql_injection&quot;&gt; SQL Injection &lt;/A&gt;&lt;/LI&gt;
+  &lt;/UL&gt;&lt;/LI&gt;
+&lt;LI class=&quot;L1&quot;&gt; &lt;A href=&quot;/part5#5__after_the_codelab&quot;&gt;After the Codelab&lt;/A&gt;&lt;/LI&gt;
+&lt;/UL&gt;
+&lt;/DIV&gt;
+&lt;DIV class=&quot;column2&quot;&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;
+&lt;NOAUTOLINK&gt;
+&lt;/NOAUTOLINK&gt;&lt;/P&gt;
+
+&lt;STYLE&gt;.column1 {display:none}&lt;/STYLE&gt;
+&lt;BR&gt;&lt;P&gt;
+&lt;H2&gt;&lt;A name=&quot;0__hackers&quot;&gt;&lt;/A&gt;Want to beat the hackers at their own game?&lt;/H2&gt;
+&lt;UL&gt;
+&lt;LI&gt;Learn how hackers find security vulnerabilities!
+&lt;LI&gt;Learn how hackers exploit web applications!
+&lt;LI&gt;Learn how to stop them!
+&lt;/UL&gt;
+&lt;/P&gt;
+&lt;!--MARK-0--&gt;
+&lt;P&gt;
+This codelab shows how web application vulnerabilities can be
+exploited and how to defend against these attacks. The best way to
+learn things is by doing, so you&#39;ll get a chance to do some real
+penetration testing, actually exploiting a real
+application. Specifically, you&#39;ll learn the following:
+&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt; How an application can be attacked using common web security
+vulnerabilities, like cross-site scripting vulnerabilities (XSS) and
+cross-site request forgery (XSRF).
+&lt;/LI&gt;
+&lt;LI&gt; How to find, fix, and avoid these common vulnerabilities and
+other bugs that have a security impact, such as denial-of-service,
+information disclosure, or remote code execution.
+&lt;/LI&gt;
+&lt;/UL&gt;
+&lt;P&gt;
+To get the most out of this lab, you should have some familiarity with
+how a web application works (e.g., general knowledge of HTML,
+templates, cookies, AJAX, etc.).
+&lt;/P&gt;
+&lt;!--MARK-1--&gt;
+&lt;BR&gt;
+&lt;BR&gt;
+&lt;H2&gt;&lt;A name=&quot;1__gruyere&quot;&gt; &lt;/A&gt; Gruyere &lt;/H2&gt;
+&lt;P&gt;
+&lt;A href=&quot;/static/gruyere.png&quot;&gt;
+&lt;IMG src=&quot;/static/gruyere.png&quot; height=&quot;285&quot; border=&quot;0&quot;
+    style=&quot;float:left; vertical-align:middle; margin-right: 10; margin-bottom: 10&quot;&gt;
+&lt;/A&gt;
+This codelab is built around &lt;B&gt;Gruyere&lt;/B&gt;
+ /&amp;#609;ru&amp;#720;&amp;#712;j&amp;#603;&amp;#601;r/ &lt;!--groo-yair--&gt; - a
+small, cheesy web application that allows its users to publish
+snippets of text and store assorted files. &quot;Unfortunately,&quot; Gruyere
+has multiple security bugs ranging from cross-site scripting and
+cross-site request forgery, to information disclosure, denial of
+service, and remote code execution. The goal of this codelab is to
+guide you through discovering some of these bugs and learning ways to
+fix them both in Gruyere and in general.
+&lt;/P&gt;
+&lt;P&gt; The codelab is organized by types of vulnerabilities. In each
+section, you&#39;ll find a brief description of a vulnerability and a task
+to find an instance of that vulnerability in Gruyere. Your job is to
+play the role of a malicious hacker and find and exploit the security
+bugs. In this codelab, you&#39;ll use both black-box hacking and white-box
+hacking. In &lt;B&gt;black box hacking,&lt;/B&gt; you try to find security bugs by
+experimenting with the application and manipulating input fields and
+URL parameters, trying to cause application errors, and looking at the
+HTTP requests and responses to guess server behavior. You do not have
+access to the source code, although understanding how to view source
+and being able to view http headers (as you can in Chrome or
+LiveHTTPHeaders for Firefox) is valuable. Using a web proxy
+like &lt;A href=&quot;https://portswigger.net/burp/&quot; target=&quot;_top&quot;&gt;Burp&lt;/A&gt;
+or &lt;A href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot;
+target=&quot;_top&quot;&gt;ZAP&lt;/A&gt; may be helpful in creating or modifying
+requests. In &lt;B&gt;white-box hacking,&lt;/B&gt; you have access to the source
+code and can use automated or manual analysis to identify bugs. You
+can treat Gruyere as if it&#39;s open source: you can read through the
+source code to try to find bugs. Gruyere is written in Python, so
+some familiarity with Python can be helpful. However, the security
+vulnerabilities covered are not Python-specific and you can do most of
+the lab without even looking at the code. You can run a local instance
+of Gruyere to assist in your hacking: for example, you can create an
+administrator account on your local instance to learn how
+administrative features work and then apply that knowledge to the
+instance you want to hack. Security researchers use both hacking
+techniques, often in combination, in real life.
+&lt;/P&gt;
+&lt;BR clear=&quot;left&quot;&gt;
+We&#39;ll tag each challenge to indicate which techniques are
+required to solve them:
+&lt;BR&gt;&lt;BR&gt;
+&lt;IMG src=&quot;/static/cheese_b.png&quot; style=&quot;vertical-align:middle;
+padding-right: 5px;&quot;&gt; Challenges that can be solved just by using
+black box techniques.&lt;BR&gt;&lt;BR&gt;
+&lt;IMG src=&quot;/static/cheese_w.png&quot; style=&quot;vertical-align:middle;
+padding-right: 5px;&quot;&gt; Challenges that require that you look at the
+Gruyere source code.&lt;BR&gt;&lt;BR&gt;
+&lt;IMG src=&quot;/static/cheese_bw.png&quot; style=&quot;vertical-align:middle;
+padding-right: 5px;&quot;&gt; Challenges that require some specific knowledge
+of Gruyere that will be given in the first hint.
+&lt;BR&gt;
+&lt;P style=&quot;color:red&quot;&gt;
+&lt;B&gt;WARNING:&lt;/B&gt; Accessing or attacking a computer system without
+authorization is illegal in many jurisdictions. While doing this
+codelab, you are specifically granted authorization to attack the
+Gruyere application as directed. You may not attack Gruyere in
+ways other than described in this codelab, nor may you attack App
+Engine directly or any other Google service. You should use what you
+learn from the codelab to make your own applications more secure. You
+should not use it to attack any applications other than your own, and
+only do that with permission from the appropriate authorities (e.g.,
+your company&#39;s security team).
+&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+
+
+             &lt;FONT SIZE=&quot;+2&quot;&gt;
+             &lt;A href=&quot;/part1&quot;&gt;Continue &amp;gt;&amp;gt;&lt;/A&gt;
+             &lt;/FONT&gt;&lt;BR&gt;
+&lt;BR&gt;
+&lt;P style=&quot;font-size:x-small&quot;&gt;
+&amp;copy; Google 2017 &lt;A href=&quot;https://www.google.com/intl/en/policies/terms/&quot;&gt;Terms of Service&lt;/A&gt;
+&lt;BR&gt;The code portions of this codelab are licensed under the
+Creative Commons Attribution-No Derivative Works 3.0 United States license
+&amp;lt;&lt;A href=&quot;https://creativecommons.org/licenses/by-nd/3.0/us/&quot;&gt;https://creativecommons.org/licenses/by-nd/3.0/us&lt;/A&gt;&amp;gt;.
+Brief excerpts of the code may be used for educational or
+instructional purposes provided this notice is kept intact.
+Except as otherwise noted the remainder of this codelab is licensed under the
+Creative Commons Attribution 3.0 United States license
+&amp;lt;&lt;A href=&quot;https://creativecommons.org/licenses/by/3.0/us/&quot;&gt;https://creativecommons.org/licenses/by/3.0/us&lt;/A&gt;&amp;gt;.
+&lt;/P&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">Cookie Poisoning</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/login?pw=ZAP&amp;uid=ZAP</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where cookie parameters might be controlled. This is called a cookie poisoning attack, and becomes exploitable when an attacker can manipulate the cookie in various ways. In some cases this will not be exploitable, however, allowing URL parameters to set cookie values is generally considered a bug.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).</p>
+
+<p>This was identified at:</p>
+
+<p>https://google-gruyere.appspot.com/635366758510173025864780192455714656361/login?pw=ZAP&amp;uid=ZAP</p>
+
+<p>User-input was found in the following cookie:</p>
+
+<p>GRUYERE=26087470|ZAP||author; path=/635366758510173025864780192455714656361</p>
+
+<p>The user input was:</p>
+
+<p>pw=ZAP</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (465 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/login?pw=ZAP&amp;uid=ZAP HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/635366758510173025864780192455714656361/login
+Cookie: GRUYERE_ID=365888515764266184426573587249237760494
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (435 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+Set-Cookie: GRUYERE=26087470|ZAP||author; path=/635366758510173025864780192455714656361
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 02f1912faec1553576b1f5928668cf39
+Date: Mon, 29 Apr 2024 18:06:32 GMT
+Server: Google Frontend
+Content-Length: 4087
+Expires: Mon, 29 Apr 2024 18:06:32 GMT
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4087 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: Home&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#39;cheese.png&#39;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;script src=&quot;/635366758510173025864780192455714656361/lib.js&quot; text=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#39;menu&#39;&gt;
+  &lt;span id=&#39;menu-left&#39;&gt;
+    &lt;a href=&#39;/635366758510173025864780192455714656361/&#39;&gt;Home&lt;/a&gt;
+      
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/snippets.gtl&#39;&gt;My&amp;nbsp;Snippets&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/newsnippet.gtl&#39;&gt;New&amp;nbsp;Snippet&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/upload.gtl&#39;&gt;Upload&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#39;menu-right&#39;&gt;
+      
+      &lt;span class=&#39;menu-user&#39;&gt;
+        ZAP &amp;lt;ZAP&amp;gt;
+      &lt;/span&gt;
+      
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/editprofile.gtl&#39;&gt;Profile&lt;/a&gt;
+      | &lt;a href=&#39;/635366758510173025864780192455714656361/logout&#39;&gt;Sign out&lt;/a&gt;
+      
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;h2 class=&#39;has-refresh&#39;&gt;Gruyere: Home&lt;/h2&gt;
+&lt;div class=&#39;refresh&#39;&gt;&lt;a class=&#39;button&#39; onclick=&#39;_refreshHome(&quot;635366758510173025864780192455714656361&quot;)&#39; href=&#39;#&#39;&gt;Refresh&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#39;content&#39;&gt;
+&lt;table width=&#39;100%&#39;&gt;
+
+  &lt;tr&gt;&lt;td colspan=&#39;3&#39;&gt;&lt;b&gt;Most recent snippets:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+
+
+
+
+  &lt;tr&gt;
+    &lt;td&gt;
+     
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;b&gt;&lt;span style=&#39;color:blue&#39;&gt;Cheddar Mac&lt;/span&gt;&lt;/b&gt;
+    &lt;/td&gt;
+    &lt;td width=&#39;100%&#39;&gt;&lt;span id=&#39;cheddar&#39;&gt;Gruyere is the cheesiest application on the web.&lt;/span&gt;
+    &lt;br&gt;
+          &lt;a href=&#39;/635366758510173025864780192455714656361/snippets.gtl?uid=cheddar&#39;&gt;All snippets&lt;/a&gt;&amp;nbsp;
+      &lt;a href=&#39;https://images.google.com/?q=cheddar+cheese&#39;&gt;Homepage&lt;/a&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+
+
+
+
+  &lt;tr&gt;
+    &lt;td&gt;
+     
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;b&gt;&lt;span style=&#39;color:red; text-decoration:underline&#39;&gt;Brie&lt;/span&gt;&lt;/b&gt;
+    &lt;/td&gt;
+    &lt;td width=&#39;100%&#39;&gt;&lt;span id=&#39;brie&#39;&gt;Brie is the queen of the cheeses&lt;span style=color:red&gt;!!!&lt;/span&gt;&lt;/span&gt;
+    &lt;br&gt;
+          &lt;a href=&#39;/635366758510173025864780192455714656361/snippets.gtl?uid=brie&#39;&gt;All snippets&lt;/a&gt;&amp;nbsp;
+      &lt;a href=&#39;https://news.google.com/news/search?q=brie&#39;&gt;Homepage&lt;/a&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>pw</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon&#39;s that can serve as name/value pair delimiters.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-12">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/lib.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bUSER\b and was detected in the element starting with: &quot; * Processes refresh response {&#39;private_snippet&#39;:snippet, user:snippet, ...}&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (386 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/635366758510173025864780192455714656361/lib.js HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://google-gruyere.appspot.com/635366758510173025864780192455714656361/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (323 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 15ee26746a8a2366d01e1c2bc8e6f078
+Server: Google Frontend
+Content-Length: 1962
+Date: Mon, 29 Apr 2024 18:00:38 GMT
+Cache-Control: public, max-age=7200
+Content-Type: application/javascript
+Age: 353
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1962 bytes)</summary>
+				
+				<pre><code>/* Copyright 2017 Google Inc. */
+/**
+ * Swaps the display settings of two elements. Before calling, exactly one
+ * of the two elements should have style=&quot;display:none&quot; and it shows the one
+ * that is hidden and hides the one that is shown.
+ */
+function _showHide(id1, id2) {
+  var x1 = document.getElementById(id1);
+  var x2 = document.getElementById(id2);
+  var shown = x1.style.display != &#39;&#39;;
+  x1.style.display = shown ? &#39;&#39; : &#39;none&#39;;
+  x2.style.display = shown ? &#39;none&#39; : &#39;&#39;;
+};
+
+/**
+ * Refreshes the current page by loading the url and then passing the
+ * json response object to the callback.
+ */
+function _refresh(url, callback) {
+  var httpRequest = window.XMLHttpRequest ? new XMLHttpRequest()
+      : new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
+  httpRequest.onreadystatechange = function() {
+    if (httpRequest.readyState == 4) {
+      _feed = callback;
+      eval(&#39;(&#39; + httpRequest.responseText + &#39;)&#39;);
+      httpRequest = null;
+    }
+  }
+  httpRequest.open(&quot;GET&quot;, url, true);
+  httpRequest.send(null);
+};
+
+/**
+ * Processes refresh response {&#39;private_snippet&#39;:snippet, user:snippet, ...}
+ */
+function _finishRefreshHome(response) {
+  for (var uid in response) {
+    var element = document.getElementById(uid);
+    if (element) {
+      element.innerHTML = response[uid];
+    }
+  }
+};
+
+function _refreshHome(uniqueId) {
+  _refresh(&quot;/&quot; + uniqueId + &quot;/feed.gtl&quot;, _finishRefreshHome);
+};
+
+/**
+ * Processes refresh response [name, snippet, ...]
+ */
+function _finishRefreshSnippets(response) {
+  var n = response.length;
+  var element = document.getElementById(&#39;user_name&#39;);
+  if (n &amp;&amp; element) {
+    element.innerHTML = response[0];
+  }
+
+  // The snippet divs are numbered 0, 1, ...
+  for (var i = 1; i &lt; n; ++i) {
+    var element = document.getElementById(i - 1);
+    if (element) {
+      element.innerHTML = response[i];
+    }
+  }
+};
+
+function _refreshSnippets(uniqueId, uid) {
+  _refresh(&quot;/&quot; + uniqueId + &quot;/feed.gtl?uid=&quot; + uid, _finishRefreshSnippets);
+};
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>user</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-14">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://google-gruyere.appspot.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (264 bytes)</summary>
+				
+				<pre><code>GET https://google-gruyere.appspot.com/robots.txt HTTP/1.1
+host: google-gruyere.appspot.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (344 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Cloud-Trace-Context: eac69713d54edeec6b7ab0778013ef42
+Server: Google Frontend
+Content-Length: 184
+Date: Mon, 29 Apr 2024 18:00:37 GMT
+Expires: Mon, 29 Apr 2024 18:10:37 GMT
+Cache-Control: public, max-age=600
+Age: 353
+ETag: &quot;3m8CBg&quot;
+Content-Type: text/plain
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (184 bytes)</summary>
+				
+				<pre><code>User-agent: *
+Disallow: /0
+Disallow: /1
+Disallow: /2
+Disallow: /3
+Disallow: /4
+Disallow: /5
+Disallow: /6
+Disallow: /7
+Disallow: /8
+Disallow: /9
+Disallow: /start
+Disallow: /resetbutton
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cache-control</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>public, max-age=600</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Cross Site Scripting (Reflected)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40012/">Cross Site Scripting (Reflected)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/79.html">79</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/attacks/xss/">https://owasp.org/www-community/attacks/xss/</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/79.html">https://cwe.mitre.org/data/definitions/79.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Absence of Anti-CSRF Tokens</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Absence of Anti-CSRF Tokens</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Big Redirect Detected (Potential Sensitive Information Leak)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Big Redirect Detected (Potential Sensitive Information Leak)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Cookie Without Secure Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10011/">Cookie Without Secure Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/614.html">614</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Charset Mismatch (Header Versus Meta Content-Type Charset)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90011/">Charset Mismatch</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/436.html">436</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection">https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>Cookie Poisoning</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10029/">Cookie Poisoning</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_cookie">https://en.wikipedia.org/wiki/HTTP_cookie</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/565.html">https://cwe.mitre.org/data/definitions/565.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-12">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-13">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-14">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-15">
+						<h4>Retrieved from Cache</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10050/">Retrieved from Cache</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a></li>
+										<li><a
+											href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a></li>
+										<li><a
+											href="https://www.rfc-editor.org/rfc/rfc9110.html">https://www.rfc-editor.org/rfc/rfc9110.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-16">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
